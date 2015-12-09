@@ -14,3 +14,17 @@ function multiplicationTable(size) {
 };
 
 console.log('Table', multiplicationTable(4));
+
+// Alternative solution
+
+// fun.apply(thisArg, [argsArray])
+
+multiplicationTable = function(size) {
+	return Array.apply(null, new Array(size)).map(function(val, i) {
+		return Array.apply(null, new Array(size)).map(function(val, j) {
+			return (i+1) * (j+1);
+		});
+	});
+};
+
+console.log("testFunc", testFunc(4));
