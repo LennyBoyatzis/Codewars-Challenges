@@ -1,6 +1,9 @@
 function multiplicationTable(size) {
 	var result = [], line;
 
+	// y - row
+	// x - column
+
 	for(var y = 0; y < size; y++) {
 		result.push(line = []);
 		for (x = 0; x < size; x++) {
